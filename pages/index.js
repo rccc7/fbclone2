@@ -19,7 +19,7 @@ export default function Home({ session, posts }) {
 
       </Head>
 
-      <h1>Hey Guys What is up! It's me RCCC 😎 Let's build Facebook (Clone)</h1>
+      <h1>Hey Guys What is up! It&apos;s me RCCC 😎 Let&apos;s build Facebook (Clone)</h1>
       {/* Header */}
       <Header />
       {/* Main section of the page */}
@@ -43,7 +43,7 @@ export async function getServerSideProps(context) {
 
   //Serverside rendering of the saved posts so that the posts will be rendered
   //faster
-  const posts = await db.collection('posts').orderBy(
+  const posts = await db.collection('fbNextJsPosts').orderBy(
     'timestamp', 'desc').get();
 
   const docs = posts.docs.map(post => ({

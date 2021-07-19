@@ -2,11 +2,12 @@ import Image from 'next/image'
 import { ChatIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline'
 
 function Post({ name, message, email, postImage, image, timestamp }) {
+    // console.log('the image>>>>', image)
     return (
         <div className='flex flex-col'>
             <div className='p-5 bg-white mt-5 rounded-t-2xl shadow-sm'>
                 <div className='flex items-center space-x-2'>
-                    <img
+                    <Image
                         className='rounded-full'
                         src={image}
                         width={40}

@@ -3,7 +3,7 @@ import Posts from "./Posts";
 import Stories from "./Stories";
 
 export default function Feed({ posts }) {
-    console.log('teh posts>>>>', posts)
+    // console.log('teh posts>>>>', posts)
     return (
         // flex-grow means flex-grow: 1 which means: Use as much space as it can.
         //In order to use the scrollbar-hide, we must install the tailwind-scrollbar-hide plugin
