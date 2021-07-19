@@ -106,7 +106,7 @@ function InputBox() {
                     <div onClick={removeImage} className='flex flex-col
                     filter hover:brightness-110 transition duration-150
                     transform hover:scale-105 cursor-pointer'>
-                        <img
+                        <Image
                             className='h-10 object-contain '
                             src={imageToPost} alt=""
                         />
