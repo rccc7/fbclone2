@@ -2,7 +2,7 @@ import React from "react"
 import Header from '../components/Header'
 import { useSession } from "next-auth/client"
 
-function about() {
+function About() {
     const [session] = useSession();
     return (
         <div>
@@ -27,4 +27,4 @@ function about() {
     )
 }
 
-export default about
+export default About
