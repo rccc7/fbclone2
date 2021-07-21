@@ -12,6 +12,7 @@ import {
     PlayIcon,
     SearchIcon,
     ShoppingCartIcon,
+    QuestionMarkCircleIcon,
 } from '@heroicons/react/outline'
 
 import HeaderIcon from './HeaderIcon'
@@ -66,11 +67,12 @@ function Header() {
                 md:space-x-2 means that when the screen has a min width of 768px then
                 the space will be 2*/}
                 <div className='flex space-x-6 md:space-x-2'>
-                    <HeaderIcon Icon={HomeIcon} active />
+                    <HeaderIcon Icon={HomeIcon} active page={'/'} />
                     <HeaderIcon Icon={FlagIcon} />
                     <HeaderIcon Icon={PlayIcon} />
                     <HeaderIcon Icon={ShoppingCartIcon} />
                     <HeaderIcon Icon={UserGroupIcon} />
+                    <HeaderIcon Icon={QuestionMarkCircleIcon} active page={'about'} />
                 </div>
             </div>
 
