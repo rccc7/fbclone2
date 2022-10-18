@@ -12,7 +12,7 @@ function About() {
             }
             <div className='flex flex-col items-center'>
                 <h1>Developed by RCCC 😎.</h1>
-                <p>This is just a clone for learning and testing purposes only.</p>
+                <p>This is just a clone for testing and practice purposes only.</p>
                 <p>Images and attribution:</p>
                 <p>Facebook Logo obtained from <a className='text-blue-700' href='https://commons.wikimedia.org/wiki/File:Facebook_f_Logo_(with_gradient).svg' target='_blank' rel="noreferrer" >Wikimedia Commons</a></p>
                 <p>Jeff Bezos: <a className='text-blue-700' href='https://commons.wikimedia.org/wiki/File:Secretary_of_Defense_Ash_Carter_meets_with_Jeff_Bezos,_May_5,_2016_(1)_(cropped).jpg' target='_blank' rel="noreferrer" >Wikimedia Commons</a></p>
