@@ -1,4 +1,5 @@
-Facebook-like portal. Demo  website that simulates Facebook UI. Users can login using their google credentials and make posts with pictures. It is responsive design so it can fit from mobile to desktop screens.
+# Facebook-like portal. 
+Demo  website that simulates Facebook UI. Users can login using their google credentials and make posts with pictures. It is responsive design so it can fit from mobile to desktop screens.
 
 To try it out please go to: https://fbclone2.vercel.app/
 <p/>IMPORTANT: In order to log in it is required to use a Google account since the system uses NextAuth to get the user's name and save his/her posts in the database associated with him/her. 
@@ -9,7 +10,6 @@ Once signed in with Google the app will get your username and display it in the 
 Technologies:
 - ReactJs 
 - NextJs
-- NextAuth
 - NextAuth
 - TailwindCSS
 - Firebase 
