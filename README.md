@@ -7,7 +7,7 @@ To try it out please go to: https://fbclone2.vercel.app/
 Please, ignore the option to sign in with Facebook since that functionality is not yet implemented.
 Once signed in with Google the app will get your username and display it in the right side of the page. Now, you can post and attach pictures, and every post you make will be displayed in a chronological order (most recent first).
 
-Technologies:
+## Technologies:
 - ReactJs 
 - NextJs
 - NextAuth
@@ -16,7 +16,27 @@ Technologies:
 - Firestore
 - Redux
 
+## Screenshots:
+
+<img src="https://github.com/rccc7/rccc-resume/blob/main/public/images/portfolio/Facebook-react.jpg" alt="screenshot" width="700"/>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Disclaimer
+
+This is just a clone for testing and practice purposes only.
+
+Images and attribution:
+
+- Facebook Logo obtained from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Facebook_f_Logo_(with_gradient).svg)
+- Jeff Bezos: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Secretary_of_Defense_Ash_Carter_meets_with_Jeff_Bezos,_May_5,_2016_(1)_(cropped).jpg)
+- Elon Musk: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elon_Musk_Royal_Society.jpg)
+- Mark Zukerberg: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_em_setembro_de_2014.jpg)
+- Bill Gates: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bill_Gates_at_2019_ARPA-E.jpg)
+- iJustine: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:IJustine_2015.jpg)
+- Luisito Comunica: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Luisito_Comunica.jpg)
+- Neo - Matrix: [Flickr](https://www.flickr.com/photos/nunoluciano/5396200604/sizes/o/)
 
 ## Getting Started
 
