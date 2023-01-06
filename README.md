@@ -1,3 +1,21 @@
+Facebook-like portal. Demo  website that simulates Facebook UI. Users can login using their google credentials and make posts with pictures. It is responsive design so it can fit from mobile to desktop screens.
+
+To try it out please go to: https://fbclone2.vercel.app/
+<p/>IMPORTANT: In order to log in it is required to use a Google account since the system uses NextAuth to get the user's name and save his/her posts in the database associated with him/her. 
+<p/>The first screen will show a button asking to login with Google. Once clicked on that button, the application will redirect to the NextAuth sign in page which lists two options: Sign in with Facebook and Sign in with Google. 
+Please, ignore the option to sign in with Facebook since that functionality is not yet implemented.
+Once signed in with Google the app will get your username and display it in the right side of the page. Now, you can post and attach pictures, and every post you make will be displayed in a chronological order (most recent first).
+
+Technologies:
+- ReactJs 
+- NextJs
+- NextAuth
+- NextAuth
+- TailwindCSS
+- Firebase 
+- Firestore
+- Redux
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
