@@ -38,57 +38,77 @@ Images and attribution:
 - Luisito Comunica: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Luisito_Comunica.jpg)
 - Neo - Matrix: [Flickr](https://www.flickr.com/photos/nunoluciano/5396200604/sizes/o/)
 
-## Step by Step Setup & Deployment Instructions:
+## Step by Step Setup & Deployment Instructions from scratch:
+
+If you want to test directly on your computer clone the repository and then 
+
+    npm install
+    
+First, run the development server:
+
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
+    
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 1. Create the Next JS project:
+    ```bash
     npx create-next-app fbclone-2
+    ```
 2. Install tailwindcss from https://tailwindcss.com/
+    ```bash
     npm install tailwindcss
-3. Delete the file styles\Home.module.css
-4. Delete everything inside the file styles\global.css
+    ```
+3. Delete the file styles\Home.module.css.
+4. Delete everything inside the file styles\global.css.
 5. Install tailwindcss. Follow the instructions for NextJS at: https://tailwindcss.com/docs/installation which will take to the following link: https://tailwindcss.com/docs/guides/nextjs --> There, it explains the procedure to install tailwindcss: Run the following comand in a terminal:
-
+    ```bash
     npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-    
+    ```
 6. Create the configuration files:
-    
+    ```bash
     npx tailwindcss init -p
-    
+    ```
 7. Conifgure tailwindcss to remove unused styles in production (instructions described in the link above)
 8. Include tailwind in our CSS, configuring the './styles/global.css' file as described also in the instructions link above
 9. Restart the server so that all the changes we just configured will take effect.
 10. Create the folder components where we'll add the component files
 11. Install heroicons. For instructions go to https://heroicons.com/ and then clic the "Documentation" button
-    
+    ```bash
     npm install @heroicons/react
-    
+    ```
 12. Install next-auth:
     
     npm install --save next-auth
     
-Files which must be edited in order to adapt the session:
-    pages/_app.js
-    pages/index.js
-    components/Login.js -->This is actually the file in which we call the sigIn from next-auth
-    env.local --> Here, is where we store the sensitive data: The client Id and the Secret obtained from either google or facebook
+    Files which must be edited in order to adapt the session:
+        pages/_app.js
+        pages/index.js
+        components/Login.js -->This is actually the file in which we call the sigIn from next-auth
+        env.local --> Here, is where we store the sensitive data: The client Id and the Secret obtained from either google or facebook
 13. Add firebase extension:
-    
+    ```bash
     npm i firebase
+    ```
     
 Remember, in order to enable upload images to firebase storage, we must go to the rules section and enable in the same way as we enable the access to the firestore database.
 
 14. Install react-firebase-hooks
-    
+    ```bash
     npm install --save react-firebase-hooks
+    ```
 
 15. Install tailwind-scrollbar-hidden plugin to enable scrollbar hiding
-    
+    ```bash
     npm install tailwind-scrollbar-hide
-    
+    ```
 In order to enable this plugin edit the tailwind.config.js file and add the require statement in the plugins section
 
-16 Deploy to github.
-17. DEPLOY to Vercel: Inside Vercel account create a new project and import the fbclone2 repository created in github, and then select "personal account" as Vercel Scope, then keep the project name as fbclone2. IMPORTANT: In the section where it asks for environment variables add the variables defined in the .env.local file including the NEXTAUTH_URL but in this case instead of localhost insert this value: NEXTAUTH_URL=fbclone2.vercel.app. That key will be encrypted by vercel, so we don't have to worry when we upload that info. Finally, click on deploy.
+16 Deploy on github.
+17. DEPLOY on Vercel: Inside Vercel account create a new project and import the fbclone2 repository created in github, and then select "personal account" as Vercel Scope, then keep the project name as fbclone2. IMPORTANT: In the section where it asks for environment variables add the variables defined in the .env.local file including the NEXTAUTH_URL but in this case instead of localhost insert this value: NEXTAUTH_URL=fbclone2.vercel.app. That key will be encrypted by vercel, so we don't have to worry when we upload that info. Finally, click on deploy.
 
 18. Inside the google account add this URI https://fbclone2.vercel.app/api/auth/callback/google to the list of URIs accepted to acces the google signin
 
