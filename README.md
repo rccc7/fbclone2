@@ -1,25 +1,27 @@
-# Facebook-like portal. 
-Demo  website that simulates Facebook UI. Users can login using their google credentials and make posts with pictures. It is responsive design so it can fit from mobile to desktop screens.
+# Facebook-like portal.
+
+Demo website that simulates Facebook UI. Users can login using their google credentials and make posts with pictures. It is responsive design so it can fit from mobile to desktop screens.
 
 To try it out please go to: https://fbclone2.vercel.app/
+
 <p/>IMPORTANT: In order to log in it is required to use a Google account since the system uses NextAuth to get the user's name and save his/her posts in the database associated with him/her. 
 <p/>The first screen will show a button asking to login with Google. Once clicked on that button, the application will redirect to the NextAuth sign in page which lists two options: Sign in with Facebook and Sign in with Google. 
 Please, ignore the option to sign in with Facebook since that functionality is not yet implemented.
 Once signed in with Google the app will get your username and display it in the right side of the page. Now, you can post and attach pictures, and every post you make will be displayed in a chronological order (most recent first).
 
 ## Technologies:
-- ReactJs 
+
+- ReactJs
 - NextJs
 - NextAuth
 - TailwindCSS
-- Firebase 
+- Firebase
 - Firestore
 - Redux
 
 ## Screenshots:
 
 <img src="https://github.com/rccc7/rccc-resume/blob/main/public/images/portfolio/Facebook-react.jpg" alt="screenshot" width="700"/>
-
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -29,8 +31,8 @@ This is just a clone for testing and practice purposes only.
 
 Images and attribution:
 
-- Facebook Logo obtained from [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Facebook_f_Logo_(with_gradient).svg)
-- Jeff Bezos: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Secretary_of_Defense_Ash_Carter_meets_with_Jeff_Bezos,_May_5,_2016_(1)_(cropped).jpg)
+- Facebook Logo obtained from [Wikimedia Commons](<https://commons.wikimedia.org/wiki/File:Facebook_f_Logo_(with_gradient).svg>)
+- Jeff Bezos: [Wikimedia Commons](<https://commons.wikimedia.org/wiki/File:Secretary_of_Defense_Ash_Carter_meets_with_Jeff_Bezos,_May_5,_2016_(1)_(cropped).jpg>)
 - Elon Musk: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Elon_Musk_Royal_Society.jpg)
 - Mark Zukerberg: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_em_setembro_de_2014.jpg)
 - Bill Gates: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Bill_Gates_at_2019_ARPA-E.jpg)
@@ -38,12 +40,12 @@ Images and attribution:
 - Luisito Comunica: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Luisito_Comunica.jpg)
 - Neo - Matrix: [Flickr](https://www.flickr.com/photos/nunoluciano/5396200604/sizes/o/)
 
-## Step by Step Setup & Deployment Instructions from scratch:
+## How to test:
 
-If you want to test directly on your computer clone the repository and then 
+If you want to test directly on your computer clone the repository and then
 
     npm install
-    
+
 First, run the development server:
 
     ```bash
@@ -51,9 +53,11 @@ First, run the development server:
     # or
     yarn dev
     ```
-    
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+<!---
+## Step by Step Setup & Deployment Instructions from scratch:
 1. Create the Next JS project:
     ```bash
     npx create-next-app fbclone-2
@@ -64,7 +68,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     ```
 3. Delete the file styles\Home.module.css.
 4. Delete everything inside the file styles\global.css.
-5. Install tailwindcss. Follow the instructions for NextJS at: https://tailwindcss.com/docs/installation which will take to the following link: https://tailwindcss.com/docs/guides/nextjs --> There, it explains the procedure to install tailwindcss: Run the following comand in a terminal:
+5. Install tailwindcss. Follow the instructions for NextJS at: https://tailwindcss.com/docs/installation which will take to the following link: https://tailwindcss.com/docs/guides/nextjs -> There, it explains the procedure to install tailwindcss: Run the following comand in a terminal:
     ```bash
     npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
     ```
@@ -81,19 +85,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
     npm install @heroicons/react
     ```
 12. Install next-auth:
-    
+
     npm install --save next-auth
-    
+
     Files which must be edited in order to adapt the session:
         pages/_app.js
         pages/index.js
-        components/Login.js -->This is actually the file in which we call the sigIn from next-auth
-        env.local --> Here, is where we store the sensitive data: The client Id and the Secret obtained from either google or facebook
+        components/Login.js ->This is actually the file in which we call the sigIn from next-auth
+        env.local -> Here, is where we store the sensitive data: The client Id and the Secret obtained from either google or facebook
 13. Add firebase extension:
     ```bash
     npm i firebase
     ```
-    
+
 Remember, in order to enable upload images to firebase storage, we must go to the rules section and enable in the same way as we enable the access to the firestore database.
 
 14. Install react-firebase-hooks
@@ -142,3 +146,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+--->
