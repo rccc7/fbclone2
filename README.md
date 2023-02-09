@@ -21,7 +21,7 @@ Once signed in with Google the app will get your username and display it in the 
 
 ## Screenshots:
 
-<img src="https://github.com/rccc7/rccc-resume/blob/main/public/images/portfolio/Facebook-react.jpg" alt="screenshot" width="700"/>
+<img src="screenshots/Facebook-react.jpg" alt="screenshot" width="700"/>
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
